@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /aboutme/
 layout: about
 ---
 # Hyunyoung Jung
