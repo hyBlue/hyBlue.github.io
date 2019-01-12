@@ -1,0 +1,399 @@
+---
+layout: default
+---
+<!-- <link href="../assets/css/screen.css" type="text/css" rel="stylesheet" > -->
+<style>
+  section {
+  	line-height: 1;
+  }
+  ol, ul {
+  	list-style: none;
+  }
+  blockquote, q {
+  	quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+  	content: '';
+  	content: none;
+  }
+  section table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  }
+
+  /* end of reset */
+
+
+
+  section {
+  	font: normal normal 400;
+  	font-size: 100%;
+  	line-height: 1.5em;
+  	/*also written as...  font: normal normal 400 100%/1.5em;*/
+  	font-family: Avenir,Verdana,sans-serif;
+  	margin-top: 1em;
+  	margin-left: 1em;
+  }
+
+  section p {
+  	position: relative;
+  	left: 25%;
+  	margin-bottom: 0.7em;
+  	margin-right: 0;
+  	width: 55%;
+  }
+
+  section code {
+  	font: normal normal;
+  	font-size: 90%;
+  	/*line-height: 1em;*/
+  	font-family: Monaco,Menlo,monospace,sans-serif;
+  	color: #aaa;
+  }
+
+  section p code {
+  	position: absolute;
+  	text-align: right;
+  	right: -20%;
+  }
+
+
+  section ul {
+  	position: relative;
+  	left: 25%;
+  	width: 75%;
+  	margin-bottom: 1.5em;
+  	margin-top: -0.5em;
+  }
+
+  /*uncomment to get dashes in the list*/
+  /*li:before {
+  	content: "-";
+  	position: relative;
+  	left: -0.25em;
+  }*/
+
+  section li {
+  	padding-left: 1.25em;
+  	text-indent: -1.25em;
+  }
+
+  section li ul {
+  	position: relative;
+  	left: 0;
+  	width: 100%;
+  	margin-top: 0.25em;
+  }
+
+  section h1 {
+  	font-weight: 400;
+  	font-family: Avenir,Cousine,Verdana,sans-serif;
+  	width: 80%;
+  }
+  section h2 {
+  	font-weight: 400;
+  	font-family: Avenir,Cousine,Verdana,sans-serif;
+  	width: 80%;
+  }
+  section h3 {
+  	font-weight: 400;
+  	font-family: Avenir,Cousine,Verdana,sans-serif;
+  	width: 80%;
+  }
+  section h4 {
+  	font-weight: 400;
+  	font-family: Avenir,Cousine,Verdana,sans-serif;
+  	width: 80%;
+  }
+
+  section h1 {
+  	text-align: left;
+  	font-size: 3em;
+  	line-height: 1em;
+  	position: relative;
+  	left: 25%;
+  }
+
+  section h1+p {
+  	/*subtitle*/
+  	font-style: italic;
+  	font-size: 110%;
+  }
+
+  section h2 {
+  	font-size: 1.1em;
+  	color: #bc412b;
+  	margin-top: 3em;
+  	position: relative;
+  	top: 1.4em;
+  	text-align: right;
+  	width: 20%;
+  }
+
+  section h3 {
+  	font-size: 1em;
+  	line-height: 2em;
+  	position: relative;
+  	top: 1.7em;
+  	text-align: right;
+  	width: 20%;
+  }
+
+  section a {
+  	color: inherit;
+  	/*text-decoration:none*/
+  }
+
+  section a:hover {
+  	color:#39f
+  }
+
+  section #webaddress {
+  	margin-top: 1em;
+  	position: relative;
+  	left: 25%;
+  	color: #bc412b;
+  	font-family: Monaco,Menlo,monospace,sans-serif;
+  	font-size: 100%;
+  }
+
+  section #webaddress a {
+  	text-decoration: none;
+  }
+
+  section em {
+  	/* font-weight: bold; */
+  	font-style: italic;
+  }
+
+  section strong {
+  	font-weight: bold;
+  }
+
+  section #address {
+  	display: none;
+  }
+
+  section {
+  	line-height: 1;
+  }
+  section ol {
+  	list-style: none;
+  }
+  section ul {
+  	list-style: none;
+  }
+  blockquote, q {
+  	quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+  	content: '';
+  	content: none;
+  }
+  section table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  }
+  section {
+  	font: normal normal 400;
+  	font-size: 12pt;
+  	line-height: 1.35em;
+  	/*also written as...  font: normal normal 400 100%/1.5em;*/
+  	font-family: Avenir,Verdana,sans-serif;
+  	/*margin-top: 1em;
+  	margin-left: 1em;*/
+  }
+
+  section p {
+  	position: relative;
+    top: -15px;
+  	left: 25%;
+  	margin-bottom: 0.2em;
+  	margin-right: 0;
+  	width: 60%;
+  }
+  section code {
+  	font: normal normal;
+  	font-size: 90%;
+  	/*line-height: 1em;*/
+  	font-family: Monaco,Menlo,monospace,sans-serif;
+  	color: #ccc;
+  }
+
+  section p code {
+  	position: absolute;
+  	text-align: right;
+  	right: -20%;
+  }
+
+
+  section ul {
+  	position: relative;
+  	left: 25%;
+  	width: 75%;
+  	margin-bottom: 1em;
+  	/*margin-top: -0.5em;*/
+  }
+
+  section li {
+  	/*second line indent*/
+  	padding-left: 1.25em;
+  	text-indent: -1.25em;
+  	/*color: #777;*/
+  }
+
+  section li ul {
+  	position: relative;
+  	left: 0;
+  	width: 100%;
+  	margin-top: 0.25em;
+  }
+
+
+  section h1  {
+  	font-weight: 400;
+  	font-family: Avenir,Cousine,Verdana,sans-serif;
+  	width: 80%;
+  }
+  section h2  {
+  	font-weight: 400;
+  	font-family: Avenir,Cousine,Verdana,sans-serif;
+  	width: 80%;
+  }
+  section h3  {
+  	font-weight: 400;
+  	font-family: Avenir,Cousine,Verdana,sans-serif;
+  	width: 80%;
+  }
+  section h4 {
+  	font-weight: 400;
+  	font-family: Avenir,Cousine,Verdana,sans-serif;
+  	width: 80%;
+  }
+
+  section h1 {
+  	text-align: left;
+  	font-size: 3em;
+  	line-height: 1em;
+  	position: relative;
+  	left: 25%;
+  }
+
+  section h1+p {
+  	/*subtitle*/
+  	font-style: italic;
+  	font-size: 110%;
+  }
+
+  section h2 {
+  	font-size: 1.1em;
+  	color: #a00;
+  	margin-top: 2em;
+  	position: relative;
+  	top: 1.2em;
+  	text-align: right;
+  	width: 20%;
+  }
+
+
+  section h3 {
+  	font-size: 1em;
+  	line-height: 2em;
+  	color: #ccc;
+  	position: relative;
+  	top: 1.6em;
+  	text-align: right;
+  	width: 20%;
+  }
+  section a {
+  	color: inherit;
+  	text-decoration:none
+  }
+
+  section a:hover {
+  	color:#39f
+  }
+
+  section #webaddress {
+  	margin-top: 1em;
+  	position: relative;
+  	left: 25%;
+  	color: #ccc;
+  	font-family: Monaco,Menlo,monospace,sans-serif;
+  	font-size: 90%;
+  }
+
+  section #webaddress a {
+  	text-decoration: none;
+  }
+
+
+
+  section strong {
+  	font-weight: bold;
+  }
+
+  section #ghbutton {
+  	display: none;
+  	visibility: hidden;
+  }
+</style>
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<!-- <link href="../assets/css/screen.css" type="text/css" rel="stylesheet" > -->
+<!-- <link href="../assets/css/print.css" type="text/css" rel="stylesheet" > -->
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.read_time %}
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
+        </header>
+      {% endunless %}
+
+      <section class="page__content" itemprop="text">
+        {% if page.toc %}
+          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
+            </nav>
+          </aside>
+        {% endif %}
+        {{ content }}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+      </section>
+
+
+
+    </div>
+
+    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+
+
+</div>

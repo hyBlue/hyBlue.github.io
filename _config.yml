@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko"
-title                    : "Anything about anything"
+title                    : "Welcome!"
 title_separator          : "-"
 name                     : "Hyunyoung Jung"
 description              : ""
@@ -104,8 +104,8 @@ analytics:
 # Site Author
 author:
   name             : "hyBlue"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Unskilled Software Engineer"
+  avatar           : "/assets/images/bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "currently studying ML"
   location         : "Seoul, Korea"
   email            : "gusdud1500@gmail.com"
   links:
@@ -123,7 +123,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/hyBlue"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
