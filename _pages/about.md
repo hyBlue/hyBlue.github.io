@@ -1,4 +1,5 @@
 ---
+title: About
 permalink: /aboutme/
 layout: about
 ---
