@@ -3,7 +3,7 @@ title: About
 permalink: /aboutme/
 layout: about
 ---
-# Hyunyoung Jung
+<!-- # Me -->
 <!-- Undergraduate in SNU -->
 
 <!-- <div id="webaddress">
