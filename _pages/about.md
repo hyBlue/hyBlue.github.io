@@ -19,8 +19,6 @@ Undergraduate in SNU
 <!-- ### Specialized in
 
 Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke) -->
-
-
 ## Education
 
 <!-- `1654-1660`
@@ -35,9 +33,8 @@ __Trinity College, Cambridge__
 __Trinity College, Cambridge__
 
 - Fellow -->
-__B.S., _Seoul National University___  
-Computer Science and Engineering
-<div class="exp"><code>2013-2019</code></div>
+- __B.S., _Seoul National University___   
+Computer Science and Engineering, _'13-'19_
 
 
 <!-- ## Awards
@@ -49,21 +46,18 @@ Associate, *French Academy of Science*, Paris, France -->
 
 ## Interests
 
-Algorithm optimization in neural networks
+- Algorithm optimization in neural networks
 
 
 ## Experience
-__CMA Lab, _Seoul National University___  
-_Undergraduate Researcher_  
-<div class="exp"><code>2019.01-</code></div>
+- __CMA Lab, _Seoul National University___  
+_Undergraduate Researcher, '19.01-_  
 
-__WaveStone__  
-_Quant Developer - Intern_  
-<div class="exp"><code>2018.07-2018.08</code></div>
+- __WaveStone__  
+_Quant Developer - Intern, '18.07-'18.08_  
 
-__Line plus Blockchain Lab__  
-_Software Engineer - Intern_  
-<div class="exp"><code>2018.01-2018.02</code></div>
+- __Line plus Blockchain Lab__  
+_Software Engineer - Intern, '18.01-'18.02_  
 
 
 <!-- ## Publications -->
