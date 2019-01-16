@@ -35,9 +35,9 @@ __Trinity College, Cambridge__
 __Trinity College, Cambridge__
 
 - Fellow -->
-`2013-2019`
 __B.S., _Seoul National University___  
 Computer Science and Engineering
+<div class="exp"><code>2013-2019</code></div>
 
 
 <!-- ## Awards
@@ -53,17 +53,17 @@ Algorithm optimization in neural networks
 
 
 ## Experience
-`2019.01-`
 __CMA Lab, _Seoul National University___  
 _Undergraduate Researcher_  
+<div class="exp"><code>2019.01-</code></div>
 
-`2018.07-2018.08`
 __WaveStone__  
 _Quant Developer - Intern_  
+<div class="exp"><code>2018.07-2018.08</code></div>
 
-`2018.01-2018.02`
 __Line plus Blockchain Lab__  
 _Software Engineer - Intern_  
+<div class="exp"><code>2018.01-2018.02</code></div>
 
 
 <!-- ## Publications -->

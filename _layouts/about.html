@@ -9,14 +9,7 @@ layout: default
   ol, ul {
   	list-style: none;
   }
-  blockquote, q {
-  	quotes: none;
-  }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-  	content: '';
-  	content: none;
-  }
+
   section table {
   	border-collapse: collapse;
   	border-spacing: 0;
@@ -34,28 +27,6 @@ layout: default
   	font-family: Avenir,Verdana,sans-serif;
   	margin-top: 1em;
   	margin-left: 1em;
-  }
-
-  section p {
-  	position: relative;
-  	left: 25%;
-  	margin-bottom: 0.7em;
-  	margin-right: 0;
-  	width: 55%;
-  }
-
-  section code {
-  	font: normal normal;
-  	font-size: 90%;
-  	/*line-height: 1em;*/
-  	font-family: Monaco,Menlo,monospace,sans-serif;
-  	color: #aaa;
-  }
-
-  section p code {
-  	position: absolute;
-  	text-align: right;
-  	right: -20%;
   }
 
 
@@ -91,11 +62,7 @@ layout: default
   	font-family: Avenir,Cousine,Verdana,sans-serif;
   	width: 80%;
   }
-  section h2 {
-  	font-weight: 400;
-  	font-family: Avenir,Cousine,Verdana,sans-serif;
-  	width: 80%;
-  }
+
   section h3 {
   	font-weight: 400;
   	font-family: Avenir,Cousine,Verdana,sans-serif;
@@ -119,16 +86,6 @@ layout: default
   	/*subtitle*/
   	font-style: italic;
   	font-size: 110%;
-  }
-
-  section h2 {
-  	font-size: 1.1em;
-  	color: #bc412b;
-  	margin-top: 3em;
-  	position: relative;
-  	top: 1.4em;
-  	text-align: right;
-  	width: 20%;
   }
 
   section h3 {
@@ -213,6 +170,7 @@ layout: default
   	margin-bottom: 0.2em;
   	margin-right: 0;
   	width: 60%;
+    float:left;
   }
   section code {
   	font: normal normal;
@@ -222,10 +180,12 @@ layout: default
   	color: #ccc;
   }
 
-  section p code {
-  	position: absolute;
+  section div code {
+  	position: relative;
+    top: -10px;
   	text-align: right;
-  	right: -20%;
+    right: -30%;
+    float:left;
   }
 
 
@@ -288,13 +248,14 @@ layout: default
   }
 
   section h2 {
-  	font-size: 1.1em;
+  	font-size: 15px;
   	color: #a00;
   	margin-top: 2em;
   	position: relative;
   	top: 1.2em;
   	text-align: right;
   	width: 20%;
+    word-break: break-all;
   }
 
 
