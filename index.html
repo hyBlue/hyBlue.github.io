@@ -1,4 +1,329 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Hyunyoung Jung</title>
+  
+  <meta name="author" content="Hyunyoung Jung">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Hyunyoung Jung</name>
+              </p>
+              <!--  <p>I am a senior staff research scientist at <a href="https://ai.google/research">Google Research</a> in <a href="https://en.wikipedia.org/wiki/One_Market_Plaza">San Francisco</a>, where I work on computer vision and machine learning.
+              </p>
+              <p>
+                At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
+              </p> -->
+              I'm a Ph.D. student in the department of Computer Science and Engineering (CSE) at Seoul National University, advised by Prof. Sungjoo Yoo.
+              
+              <p>My research interests are broadly in perception of scene geometry from a set of images with neural networks including depth estimation, visual localization, 3D-aware image synthesis and neural rendering. 
+              </p>
+              I'm also interested in optimizing existing neural networks to run in real-time on embedded devices.
+              <p style="text-align:center">
+                <a href="mailto:gusdud1500@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=PvpSNkQAAAAJ&hl=ko">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/hyunyoungjung/">Linkedin</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:30%;max-width:30%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/hyunyoung.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+
+        </tbody></table>
+        
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+          
+            </td>
+          </tr>
+
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<tr onmouseout="anyflow_stop()" onmouseover="anyflow_start()" >
+  <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='anyflow_img'>
+                  <img src='images/anyflow_after.PNG' width="160"></div>
+                <img src='images/anyflow_before.PNG' width="160">
+              </div>
+              <script type="text/javascript">
+                function anyflow_start() {
+                  document.getElementById('anyflow_img').style.opacity = "1";
+                }
+
+                function anyflow_stop() {
+                  document.getElementById('anyflow_img').style.opacity = "0";
+                }
+                anyflow_stop()
+              </script>
+            </td>
+
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="http://arxiv.org/abs/2303.16493">
+      <papertitle>AnyFlow: Arbitrary Scale Optical Flow with Implicit Neural Representation</papertitle>
+    </a>
+    <br>
+    <strong>Hyunyoung Jung</strong>, Zhuo Hui, Lei Luo, Haitao Yang, Feng Liu, Sungjoo Yoo, Rakesh Ranjan, Denis Demandolx
+  
+    
+    <br>
+    <em>CVPR</em>, 2023 &nbsp <font color="red"><strong>(Highlight)</strong></font>
+    <br>
+    <a href="http://arxiv.org/abs/2303.16493">arXiv</a>
+
+    <br><br>
+    The optical flow network is designed to produce outputs at any desired resolution while maintaining robust performance, when processing low-resolution images.
+ 
+  </td>
+</tr>
+
+<tr onmouseout="fsre_stop()" onmouseover="fsre_start()" >
+  <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='fsre_image'>
+                  <img src='images/fsre_after.PNG' width="160"></div>
+                <img src='images/fsre_before.PNG' width="160">
+              </div>
+              <script type="text/javascript">
+                function fsre_start() {
+                  document.getElementById('fsre_image').style.opacity = "1";
+                }
+
+                function fsre_stop() {
+                  document.getElementById('fsre_image').style.opacity = "0";
+                }
+                fsre_stop()
+              </script>
+            </td>
+
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Jung_Fine-Grained_Semantics-Aware_Representation_Enhancement_for_Self-Supervised_Monocular_Depth_Estimation_ICCV_2021_paper.pdf">
+      <papertitle>Fine-grained Semantics-aware Representation Enhancement for Self-supervised Monocular Depth Estimation</papertitle>
+    </a>
+    <br>
+    <strong>Hyunyoung Jung</strong>,
+    <a href="https://sites.google.com/view/eh-p/home">Eunhyuk Park</a>, 
+    <a href="http://cmalab.snu.ac.kr/member/yeonbin">Sungjoo Yoo</a>
+    
+    <br>
+    <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral)</strong></font>
+    <br>
+    <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Jung_Fine-Grained_Semantics-Aware_Representation_Enhancement_for_Self-Supervised_Monocular_Depth_Estimation_ICCV_2021_paper.pdf">paper</a>
+    /
+    <a href="https://arxiv.org/abs/2108.08829">arXiv</a>
+    /
+    <a href="https://github.com/hyBlue/FSRE-Depth">code</a>
+
+    <br><br>
+The depth estimation network utilizes semantic information to enhance boundary accuracy, incorporating metric-learning and cross-attention.  
+  </td>
+</tr>
+		  
+        </tbody></table>
+        
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Projects</heading>
+          
+            </td>
+          </tr>
+
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<tr onmouseout="ragraf_stop()" onmouseover="ragraf_start()" >
+  <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ragraf_img'>
+                  <img src='images/ragraf_after.gif' width="160"></div>
+                <img src='images/ragraf_before.PNG' width="160">
+              </div>
+              <script type="text/javascript">
+                function ragraf_start() {
+                  document.getElementById('ragraf_img').style.opacity = "1";
+                }
+
+                function ragraf_stop() {
+                  document.getElementById('ragraf_img').style.opacity = "0";
+                }
+                ragraf_stop()
+              </script>
+            </td>
+
+  <td style="padding:20px;width:75%;vertical-align:middle">
+  
+      <papertitle>Reflectance-aware Generative Radiance Fields for 3D-aware Image Synthesis</papertitle>
+  
+    <br>
+    <br>
+The generative NeRF-based network is trained to achieve relightability using only a collection of single-view images, without requiring any supplementary information.  </td>
+</tr>
+
+
+<tr >
+<td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img style="width:100%;max-width:75%", src="images/iitp.png"></td>
+
+  <td style="padding:20px;width:75%;vertical-align:middle">
+  
+      <papertitle>Development of model compression framework for scalable on-device AI computing on Edge applications</papertitle>
+  
+    <br><br>
+    A Korean government funded project ($10M, 2021-2024) to develop automatic DL model optimization methods for on-device AI on commercial neural network accelerators.
+  </td>
+</tr>
+
+
+
+
+		  
+        </tbody></table>
+
+
+
+
+				
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Experience</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+					
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img style="width:100%;max-width:75%", src="images/meta.gif"></td>
+            <td width="75%" valign="center">
+              Research Intern at <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a>
+              <br><br>
+              <em> Jun 2023 - Dec 2023 (Expected), &nbsp Sunnyvale, CA, US </em>
+  
+              <br>
+              <em> Jun 2022 - Dec 2022, &nbsp Seattle, WA, US  </em>
+             
+            </td>
+          </tr>
+
+        
+           <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img style="width:100%;max-width:75%", src="images/bobidi.jpg"></td>
+            <td width="75%" valign="center">
+              Software Engineer Intern at <a href="https://www.bobidi.com/">Bobidi</a>
+              <br><br>
+              <em> Jan 2022 - Feb 2022, &nbsp Seoul, South Korea  </em>
+          
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img style="width:50%;max-width:50%", src="images/line.png"></td>
+            <td width="75%" valign="center">
+              Software Engineer Intern at <a href="https://linepluscorp.com/">Line Plus Corp.</a>
+              <br><br>
+              <em> Jan 2018 - Feb 2018, &nbsp  Seongnam, South Korea  </em>
+             
+            </td>
+          </tr>
+</tbody></table>
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Honors & awards</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+					
+          <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img style="width:100%;max-width:75%", src="images/qualcomm.png"></td>
+            <td width="75%" valign="center">
+              <a href="https://www.qualcomm.com/research/research/university-relations/innovation-fellowship/winners">
+              Qualcomm Innovation Fellowship Korea 2021
+              </a>
+              <br>
+              <em> Nov 2021 </em>
+          
+            </td>
+          </tr>
+
+          <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img style="width:100%;max-width:75%", src="images/naver_labs.jpg"></td>
+            <td width="75%" valign="center">
+              <a href="https://www.naverlabs.com/storyDetail/181">
+              NAVER LABS Mapping & Localization Challenge
+              </a>
+            <br>
+            <em> Jul 2020 </em>
+            <br><br>
+            Built full pipeline of structure-based hierarchical visual localization framework on NAVER LABS datasets. Earned 2nd Place in both Indoor / Outdoor 
+            sections (total prize 6M KRW).
+            </td>
+          </tr>
+					
+        </tbody></table>
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Education</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+					
+          <tr>
+            <td width="75%" valign="center">
+              Seoul National University
+              <br>
+              <br>
+              <em> Sep 2019 - Present </em>
+              <br>
+              The Integrated MA/Ph.D. Course in Computer Science and Engineering
+              <br>
+              <br>
+              <em> Mar 2013 - Aug 2019 (two gap years for military service)</em>
+              <br>
+              Bachelor of Science in Computer Science and Engineering 
+              <br>
+          
+            </td>
+          </tr>
+          
+					
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Forked from <a href="https://jonbarron.info/">Jon Barron's website </a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
