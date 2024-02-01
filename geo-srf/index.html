@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Geometry Transfer for Stylizing Radiance Fields</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <!-- <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> -->
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Geometry Transfer for Stylizing Radiance Fields
+            </h1>
+            <!-- <h2 class="title publication-title is-3"> arxiv </h2> -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://hyblue.github.io/" target="_blank">Hyunyoung Jung</a><sup>1</sup>,&nbsp;
+              </span>
+              <span class="author-block">
+                <a href="https://shnnam.github.io/" target="_blank">Seonghyeon Nam</a><sup>2</sup>,&nbsp;
+              </span>
+              <span class="author-block">
+                <a href="https://nsarafianos.github.io/" target="_blank">Nikolaos Sarafianos</a><sup>2</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="http://cmalab.snu.ac.kr/" target="_blank">Sungjoo Yoo</a><sup>1</sup>,&nbsp;
+              </span>
+              <span class="author-block">
+                <a href="https://www.sornlex.com/" target="_blank">Alexander Sorkine-Hornung</a><sup>2</sup>,&nbsp;
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/rakesh-r-3848538" target="_blank">Rakesh Ranjan</a><sup>2</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Seoul National University</span> &nbsp;&nbsp;
+              <span class="author-block"><sup>2</sup>Meta Reality Labs</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a  class="button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper (TBD)</span>
+                  </a>
+                </span>
+                <!-- Arxiv Link. -->
+                <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv (TBD)</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark"
+                    target="_blank">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/hyBlue/Geo-SRF" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (TBD)</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">1-minute Intro</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/QpFQjE9sDg8" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+          </div>
+
+          <!-- <div class="publication-video">
+            <video  controls autoplay playsinline >
+              <source src="./assets/Teaser.mp4" type="video/mp4">
+            </video>
+          </div> -->
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Shape and geometric patterns are essential in defining stylistic identity.
+              However, current 3D style transfer methods predominantly focus on transferring colors and textures, often
+              overlooking geometric aspects.
+              In this paper, we introduce Geometry Transfer, a novel method that leverages geometric deformation for 3D
+              style transfer.
+              This technique employs depth maps to extract a style guide, subsequently applied to stylize the geometry
+              of radiance fields.
+              Moreover, we propose new techniques that utilize geometric cues from the 3D scene, thereby enhancing
+              aesthetic expressiveness and more accurately reflecting intended styles.
+              Our extensive experiments show that Geometry Transfer enables a broader and more expressive range of
+              stylizations, thereby significantly expanding the scope of 3D style transfer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+
+      <!-- Paper video. -->
+
+      <!--/ Paper video. -->
+    </div>
+  </section>
+  <section class="hero is-light is-small">
+
+    <div class="hero-body">
+      <div class="container" style="text-align:center">
+
+
+        <h2 class="title is-3">Qualitative Results</h2>
+        <div class="container" style="text-align:center">
+          Given a reference 3D scene and a pair of style guides: <b>an RGB image and a depth map </b>, <br>
+          we coherently stylize both the scene’s appearance and shape to best express the given style.
+        </div>
+        <br><br>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline height="100%"
+              style=" padding-bottom:5%">
+              <source src="./assets/trex_158.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/teaser.png" style="width:10%; " /> -->
+            <!-- <img src="./assets/style_image_139.jpg" style="width:10%; " /> -->
+          </div>
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+              <source src="./assets/fern_138.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
+            <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
+          </div>
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+              <source src="./assets/horns_174.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
+            <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
+          </div>
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline height="100%"
+              style=" padding-bottom:5%">
+              <source src="./assets/trex_147.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/teaser.png" style="width:10%; " /> -->
+            <!-- <img src="./assets/style_image_139.jpg" style="width:10%; " /> -->
+          </div>
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+              <source src="./assets/fern_166.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
+            <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
+          </div>
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+              <source src="./assets/fern_174.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
+            <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
+          </div>
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+              <source src="./assets/horns_144.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
+            <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
+          </div>
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+              <source src="./assets/fern_139.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
+            <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
+          </div>
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline height="100%"
+              style=" padding-bottom:5%">
+              <source src="./assets/trex_174.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/teaser.png" style="width:10%; " /> -->
+            <!-- <img src="./assets/style_image_139.jpg" style="width:10%; " /> -->
+          </div>
+
+          <div class="item item-trex">
+            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+              <source src="./assets/horns_154.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
+            <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Comparisons. -->
+
+      <!--/ Comparisons. -->
+
+      <!-- Extensions. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <!-- <p>
+            Descriptions for extensions.
+          </p> -->
+
+            <!-- Adaptation to 2D Stylization. -->
+            <div class="columns is-centered" , style="margin-bottom: 5%;">
+              <div class="column is-full-width">
+                <div class="content has-text-justified">
+                  <h3 class="title is-4">Partial Stylization</h3>
+                  <p>
+                    Our method can be seamlessly incorporated into <a
+                      href="https://nihalsid.github.io/panoptic-lifting/">Panoptic Lifting</a>,
+                    allowing us to freely render stylized object classes and instances according to our preferences
+                    during runtime.
+                  </p>
+                  <div class="columns is-vcentered" style="margin-top: 2%;">
+                    <div class="has-text-centered" style="width: 50%;">
+                      <div height="33%">
+                        <video poster="" id="truck-adain" autoplay controls muted loop playsinline>
+                          <source src="./assets/Partial_3D_instances_comp.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+
+                    <div class="has-text-centered" style="width: 50%; margin-left: 3%;">
+                      <div height="33%">
+                        <video poster="" id="truck-adain" autoplay controls muted loop playsinline>
+                          <source src="./assets/Partial_3D_instances_153_comp.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--/ Adaptation to 2D Stylization. -->
+
+
+
+            <!-- Multi-Reference. -->
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <div class="content has-text-justified">
+                  <h3 class="title is-4">Interpolation</h3>
+                  <p>
+                    <!-- <i>Ref-NPR</i> can be easily accommodated to multi-reference scenarios, by registering
+                    rays using all stylized reference views in R<sup>3</sup>, and by expanding
+                    the capacity of styles and content features in TCM.
+                    With two additional stylized views, better feature matching is obtained from richer style contents. -->
+                    The use of deformation fields, in conjunction with the original color grid, enables smooth
+                    interpolation between the original scene and the stylized one.
+                  </p>
+                  <div class="columns is-vcentered">
+
+                    <div class="column has-text-centered" style="width: 50%;">
+                      <div height="50%">
+                        <video poster="" id="playground-single" autoplay controls muted loop playsinline>
+                          <source src="./assets/trex_interp_comp.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                      <!-- <p>Scene with a single reference</p> -->
+
+                      <div height="50%">
+                        <video poster="" id="playground-single" autoplay controls muted loop playsinline>
+                          <source src="./assets/fern_interp_comp.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                      <!-- <p>Scene with multiple references</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ Multi-Reference. -->
+
+          </div>
+        </div>
+      </div>
+      <!--/ Extensions. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <h2 class="title is-3">Comparisons</h2>
+            <p>
+              We compare our results with recent top-performing 3D style transfer methods on the fern scene from the
+              LLFF dataset.
+            </p>
+            <div class="columns is-vcentered has-text-centered">
+              <div style="width: 20%;">
+                <img src="./assets/fern.png" height="20%" />
+                <p>Content</p>
+                <img src="./assets/style_image_139.png" height="20%" />
+                <p>Style</p>
+              </div>
+              <div style="width: 80%; margin-left: 5%;">
+                <div height="50%" class="row columns">
+                  <div width="50%" class="column">
+                    <video poster="" id="mic-abc-texler" autoplay controls muted loop playsinline>
+                      <source src="./assets/snerf.mp4" type="video/mp4">
+                    </video>
+                    <p><a href="https://arxiv.org/abs/2207.02363/">SNeRF</a></p>
+                  </div>
+                  <div width="50%" class="column">
+                    <video poster="" id="mic-abc-arf" autoplay controls muted loop playsinline>
+                      <source src="./assets/arf_comp.mp4" type="video/mp4">
+                    </video>
+                    <p><a href="https://www.cs.cornell.edu/projects/arf/">ARF</a></p>
+                  </div>
+                </div>
+                <div height="50%" class="row columns">
+                  <div width="50%" class="column">
+                    <video poster="" id="mic-abc-snerf" autoplay controls muted loop playsinline>
+                      <source src="./assets/ref.mp4" type="video/mp4">
+                    </video>
+                    <p><a href="https://ref-npr.github.io/">Ref-NPR</a></p>
+                  </div>
+                  <div width="50%" class="column">
+                    <video poster="" id="mic-abc-refnpr" autoplay controls muted loop playsinline>
+                      <source src="./assets/ours_comp.mp4" type="video/mp4">
+                    </video>
+                    <p><b>Ours</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+
+
+
+
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website template credit to <a href="https://nerfies.github.io/">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
