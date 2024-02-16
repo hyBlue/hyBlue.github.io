@@ -41,10 +41,9 @@
 
 
                   </p>
-                  <p>My research primarily focuses on leveraging neural networks to perceive scene geometry from
-                    collections of images.
-                    Within this context, I have worked on depth estimation, visual localization, optical flow, 3D-aware
-                    image synthesis, and neural rendering.
+                  <p>My research interests broadly lie in computational photography, 2D/3D vision, and graphics. Within
+                    this area, I have experience with scene perception (such as depth, optical flow, and segmentation),
+                    visual localization, generative models (such as GANs and Diffusion models), and neural rendering.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:gusdud1500@gmail.com">Email</a> &nbsp/&nbsp
@@ -81,6 +80,55 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="geosrf_stop()" onmouseover="geosrf_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='geosrf_img'><video width=100% muted autoplay loop>
+                        <source src="images/geosrf.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/geosrf.png' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function geosrf_start() {
+                      document.getElementById('geosrf_img').style.opacity = "1";
+                    }
+
+                    function geosrf_stop() {
+                      document.getElementById('geosrf_img').style.opacity = "0";
+                    }
+                    geosrf_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://www.youtube.com/watch?v=QpFQjE9sDg8">
+                    <papertitle>Geometry Transfer for Stylizing Radiance Fields </papertitle>
+                  </a>
+                  <br>
+                  <strong>Hyunyoung Jung</strong>, <a href="https://shnnam.github.io/">Seonghyeon
+                    Nam</a>, <a href="https://nsarafianos.github.io/">Nikolaos Sarafianos</a>, <a
+                    href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>, <a href="https://www.sornlex.com/">Alexander
+                    Sorkine-Hornung</a>, <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a>
+
+                  <br>
+                  <em>arxiv,</em> 2024
+                  <br>
+                  <a
+                    href="https://drive.google.com/file/d/18REIVi7IQCLhgZ_nhZKdVl6jQ-6bj3h5/view?usp=drive_link">paper</a>
+                  /
+                  <a href="https://hyblue.github.io/geo-srf">project page</a> /
+                  <a href="https://arxiv.org/abs/2402.00863">arXiv</a>
+
+                  <br><br>
+                  The geometry and appearance of a 3D scene are coherently stylized, guided by an RGB image and a depth
+                  map.
+
+
+                </td>
+              </tr>
+
+
               <tr onmouseout="anyflow_stop()" onmouseover="anyflow_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -102,17 +150,25 @@
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="http://arxiv.org/abs/2303.16493">
+                  <a
+                    href="https://openaccess.thecvf.com/content/CVPR2023/papers/Jung_AnyFlow_Arbitrary_Scale_Optical_Flow_With_Implicit_Neural_Representation_CVPR_2023_paper.pdf">
                     <papertitle>AnyFlow: Arbitrary Scale Optical Flow with Implicit Neural Representation</papertitle>
                   </a>
                   <br>
-                  <strong>Hyunyoung Jung</strong>, Zhuo Hui, Lei Luo, Haitao Yang, Feng Liu, Sungjoo Yoo, Rakesh Ranjan,
-                  Denis Demandolx
+                  <strong>Hyunyoung Jung</strong>, <a href="https://huizhuo1987.github.io/"> Zhuo Hui</a>,
+                  <a href="https://www.linkedin.com/in/rayluolei/">Lei Luo</a>,
+                  <a href="https://www.linkedin.com/in/haitao-yang-28582324/">Haitao Yang</a> ,
+                  <a href="https://pages.cs.wisc.edu/~fliu/">Feng Liu</a> ,
+                  <a href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>,
+                  <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a>,
+                  <a href="https://www.linkedin.com/in/demandolx/">Denis Demandolx</a>
 
 
                   <br>
                   <em>CVPR</em>, 2023 &nbsp <font color="red"><strong>(Highlight)</strong></font>
                   <br>
+                  <a
+                    href="https://openaccess.thecvf.com/content/CVPR2023/papers/Jung_AnyFlow_Arbitrary_Scale_Optical_Flow_With_Implicit_Neural_Representation_CVPR_2023_paper.pdf">paper</a>/
                   <a href="http://arxiv.org/abs/2303.16493">arXiv</a>
 
                   <br><br>
@@ -150,8 +206,8 @@
                   </a>
                   <br>
                   <strong>Hyunyoung Jung</strong>,
-                  Eunhyuk Park,
-                  Sungjoo Yoo
+                  <a href="https://sites.google.com/view/eh-p/members">Eunhyeok Park</a>,
+                  <a href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>
 
                   <br>
                   <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral)</strong></font>
@@ -211,6 +267,7 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
 
                   <papertitle>Reflectance-aware Generative Radiance Fields for 3D-aware Image Synthesis</papertitle>
+                  <br>2021
 
                   <br>
                   <br>
