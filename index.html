@@ -1,445 +1,146 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Hyunyoung Jung</title>
-
-  <meta name="author" content="Hyunyoung Jung">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <meta name="author" content="Hyunyoung Jung">
+  <meta name="description" content="Hyunyoung Jung — Computer vision researcher specializing in 3D generative modeling, visual perception, and neural rendering, from research and large-scale training to production deployment.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Hyunyoung Jung · 3D Vision &amp; Generative AI</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="stylesheet.css?v=institution-15-20261016">
+  <script src="site.js?v=large-media-20261014" defer></script>
 </head>
-
 <body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Hyunyoung Jung</name>
-                  </p>
-                  <p>
-                    I am a Computer Vision Engineer on the Core AI team at Meta Reality Labs, working on 3D vision and generative models for mixed reality applications.
-                    I obtained my Ph.D. in Computer Science and Engineering (CSE) from Seoul National University under the guidance of Prof. <a
-                      href="http://cmalab.snu.ac.kr/member/yeonbin">Sungjoo Yoo</a>.
-                    During my doctoral studies, I completed research internships at Meta in 2022 and 2023. I received a B.S. in CSE from Seoul National University.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="https://drive.google.com/file/d/1MYc9EuSvopnszcYnqjWMVatY3oLOa06a/view?usp=sharing">CV</a> &nbsp/&nbsp
-                    <a href="mailto:gusdud1500@gmail.com">Email</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com/citations?user=PvpSNkQAAAAJ&hl=ko">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/hyunyoungjung/">Linkedin</a> <!--&nbsp/&nbsp-->
-                    <!-- <a href="https://hyblue.github.io/blog">Blog</a> -->
-
-                  </p>
-                </td>
-                <td style="padding:2.5%;width:30%;max-width:30%">
-                  <img style="width:100%;max-width:100%" alt="profile photo" src="images/hyunyoung.jpg"
-                    class="hoverZoomLink"></a>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Research</heading>
-
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-              <tr onmouseout="geosrf_stop()" onmouseover="geosrf_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='geosrf_img'><video width=100% muted autoplay loop>
-                        <source src="images/geosrf.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video></div>
-                    <img src='images/geosrf.jpg' width="100%">
-                  </div>
-                  <script type="text/javascript">
-                    function geosrf_start() {
-                      document.getElementById('geosrf_img').style.opacity = "1";
-                    }
-
-                    function geosrf_stop() {
-                      document.getElementById('geosrf_img').style.opacity = "0";
-                    }
-                    geosrf_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://www.youtube.com/watch?v=QpFQjE9sDg8">
-                    <papertitle>Geometry Transfer for Stylizing Radiance Fields </papertitle>
-                  </a>
-                  <br>
-                  <strong>Hyunyoung Jung</strong>, <a href="https://shnnam.github.io/">Seonghyeon
-                    Nam</a>, <a href="https://nsarafianos.github.io/">Nikolaos Sarafianos</a>, <a
-                    href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>, <a href="https://www.sornlex.com/">Alexander
-                    Sorkine-Hornung</a>, <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a>
-
-                  <br>
-                  <em>CVPR</em>, 2024
-                  <br>
-                  <a
-                    href="https://drive.google.com/file/d/18REIVi7IQCLhgZ_nhZKdVl6jQ-6bj3h5/view?usp=drive_link">paper</a>
-                  /
-                  <a href="https://hyblue.github.io/geo-srf">project page</a> /
-                  <a href="https://arxiv.org/abs/2402.00863">arXiv</a>
-
-                  <br><br>
-                  The geometry and appearance of a 3D scene are coherently stylized, guided by an RGB image and a depth
-                  map.
-
-
-                </td>
-              </tr>
-
-
-              <tr onmouseout="anyflow_stop()" onmouseover="anyflow_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='anyflow_img'>
-                      <img src='images/anyflow_after.png' width="160">
-                    </div>
-                    <img src='images/anyflow_before.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function anyflow_start() {
-                      document.getElementById('anyflow_img').style.opacity = "1";
-                    }
-
-                    function anyflow_stop() {
-                      document.getElementById('anyflow_img').style.opacity = "0";
-                    }
-                    anyflow_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a
-                    href="https://openaccess.thecvf.com/content/CVPR2023/papers/Jung_AnyFlow_Arbitrary_Scale_Optical_Flow_With_Implicit_Neural_Representation_CVPR_2023_paper.pdf">
-                    <papertitle>AnyFlow: Arbitrary Scale Optical Flow with Implicit Neural Representation</papertitle>
-                  </a>
-                  <br>
-                  <strong>Hyunyoung Jung</strong>, <a href="https://huizhuo1987.github.io/"> Zhuo Hui</a>,
-                  <a href="https://www.linkedin.com/in/rayluolei/">Lei Luo</a>,
-                  <a href="https://www.linkedin.com/in/haitao-yang-28582324/">Haitao Yang</a> ,
-                  <a href="https://pages.cs.wisc.edu/~fliu/">Feng Liu</a> ,
-                  <a href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>,
-                  <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a>,
-                  <a href="https://www.linkedin.com/in/demandolx/">Denis Demandolx</a>
-
-
-                  <br>
-                  <em>CVPR</em>, 2023 &nbsp <font color="red"><strong>(Highlight)</strong></font>
-                  <br>
-                  <a
-                    href="https://openaccess.thecvf.com/content/CVPR2023/papers/Jung_AnyFlow_Arbitrary_Scale_Optical_Flow_With_Implicit_Neural_Representation_CVPR_2023_paper.pdf">paper</a>/
-                  <a href="http://arxiv.org/abs/2303.16493">arXiv</a>
-
-                  <br><br>
-                  The optical flow network is designed to produce outputs at any desired resolution while maintaining
-                  robust performance, when processing low-resolution images.
-
-                </td>
-              </tr>
-
-              <tr onmouseout="fsre_stop()" onmouseover="fsre_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='fsre_image'>
-                      <img src='images/fsre_after.png' width="160">
-                    </div>
-                    <img src='images/fsre_before.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function fsre_start() {
-                      document.getElementById('fsre_image').style.opacity = "1";
-                    }
-
-                    function fsre_stop() {
-                      document.getElementById('fsre_image').style.opacity = "0";
-                    }
-                    fsre_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a
-                    href="https://openaccess.thecvf.com/content/ICCV2021/papers/Jung_Fine-Grained_Semantics-Aware_Representation_Enhancement_for_Self-Supervised_Monocular_Depth_Estimation_ICCV_2021_paper.pdf">
-                    <papertitle>Fine-grained Semantics-aware Representation Enhancement for Self-supervised Monocular
-                      Depth Estimation</papertitle>
-                  </a>
-                  <br>
-                  <strong>Hyunyoung Jung</strong>,
-                  <a href="https://sites.google.com/view/eh-p/members">Eunhyeok Park</a>,
-                  <a href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>
-
-                  <br>
-                  <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral)</strong></font>
-                  <br>
-                  <a
-                    href="https://openaccess.thecvf.com/content/ICCV2021/papers/Jung_Fine-Grained_Semantics-Aware_Representation_Enhancement_for_Self-Supervised_Monocular_Depth_Estimation_ICCV_2021_paper.pdf">paper</a>
-                  /
-                  <a href="https://arxiv.org/abs/2108.08829">arXiv</a>
-                  /
-                  <a href="https://github.com/hyBlue/FSRE-Depth">code</a>
-
-                  <br><br>
-                  The depth estimation network utilizes semantic information to enhance boundary accuracy, incorporating
-                  metric-learning and cross-attention.
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Projects</heading>
-
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-              <tr onmouseout="ragraf_stop()" onmouseover="ragraf_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='ragraf_img'>
-                      <img src='images/ragraf_after.gif' width="160">
-                    </div>
-                    <img src='images/ragraf_before.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function ragraf_start() {
-                      document.getElementById('ragraf_img').style.opacity = "1";
-                    }
-
-                    function ragraf_stop() {
-                      document.getElementById('ragraf_img').style.opacity = "0";
-                    }
-                    ragraf_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-
-                  <papertitle>Reflectance-aware Generative Radiance Fields for 3D-aware Image Synthesis</papertitle>
-                  <br>2021
-
-                  <br>
-                  <br>
-                  The generative NeRF-based network is trained to achieve relightability using only a collection of
-                  single-view images, without requiring any supplementary information.
-                </td>
-              </tr>
-
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img
-                    style="width:100%;max-width:75%" , src="images/iitp.png"></td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-
-                  <papertitle>Development of model compression framework for scalable on-device AI computing on Edge
-                    applications</papertitle>
-
-                  <br><br>
-                  A Korean government funded project ($10M, 2021-2024) to develop automatic DL model optimization
-                  methods for on-device AI on commercial neural network accelerators.
-                </td>
-              </tr>
-
-
-
-
-
-            </tbody>
-          </table>
-
-
-
-
-
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td>
-                  <heading>Experience</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellpadding="20">
-            <tbody>
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img
-                    style="width:100%;max-width:75%" , src="images/meta.gif"></td>
-                <td width="75%" valign="center">
-                  Research Intern at <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a>
-                  <br><br>
-                  <em> Jun 2023 - Dec 2023, &nbsp Sunnyvale, CA, US </em>
-
-                  <br>
-                  <em> Jun 2022 - Dec 2022, &nbsp Seattle, WA, US </em>
-
-                </td>
-              </tr>
-
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img
-                    style="width:100%;max-width:75%" , src="images/bobidi.jpg"></td>
-                <td width="75%" valign="center">
-                  Software Engineer Intern at <a href="https://www.bobidi.com/">Bobidi</a>
-                  <br><br>
-                  <em> Jan 2022 - Feb 2022, &nbsp Seoul, South Korea </em>
-
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img
-                    style="width:50%;max-width:50%" , src="images/line.png"></td>
-                <td width="75%" valign="center">
-                  Software Engineer Intern at <a href="https://linepluscorp.com/">Line Plus Corp.</a>
-                  <br><br>
-                  <em> Jan 2018 - Feb 2018, &nbsp Seongnam, South Korea </em>
-
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td>
-                  <heading>Honors & awards</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellpadding="20">
-            <tbody>
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img
-                    style="width:100%;max-width:75%" , src="images/qualcomm.png"></td>
-                <td width="75%" valign="center">
-                  <a
-                    href="https://www.qualcomm.com/research/research/university-relations/innovation-fellowship/winners">
-                    Qualcomm Innovation Fellowship Korea 2021
-                  </a>
-                  <br>
-                  <em> Nov 2021 </em>
-
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle;text-align: center"><img
-                    style="width:100%;max-width:75%" , src="images/naver_labs.jpg"></td>
-                <td width="75%" valign="center">
-                  <a href="https://www.naverlabs.com/storyDetail/181">
-                    NAVER LABS Mapping & Localization Challenge
-                  </a>
-                  <br>
-                  <em> Jul 2020 </em>
-                  <br><br>
-                  Built full pipeline of structure-based hierarchical visual localization framework on NAVER LABS
-                  datasets. Earned 2nd Place in both Indoor / Outdoor
-                  sections (total prize 6M KRW).
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td>
-                  <heading>Education</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellpadding="20">
-            <tbody>
-
-              <tr>
-                <td width="75%" valign="center">
-                  Seoul National University
-                  <br>
-                  <br>
-                  <em> Sep 2019 - Present </em>
-                  <br>
-                  The Integrated MA/Ph.D. Course in Computer Science and Engineering
-                  <br>
-                  <br>
-                  <em> Mar 2013 - Aug 2019 (two gap years for military service)</em>
-                  <br>
-                  Bachelor of Science in Computer Science and Engineering
-                  <br>
-
-                </td>
-              </tr>
-
-
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px">
-                  <br>
-                  <p style="text-align:right;font-size:small;">
-                    Forked from <a href="https://jonbarron.info/">Jon Barron's website </a>.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-  </table>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <main id="main">
+      <section class="intro" id="about" aria-labelledby="name">
+        <div class="intro-copy">
+          <h1 id="name">Hyunyoung Jung</h1>
+          <p class="bio">I am a computer vision researcher at Meta Reality Labs. My research spans 3D computer vision and graphics, including visual perception, neural rendering, and generative 3D modeling. My recent work focuses on developing generative models for 3D assets and interactive worlds, from research and large-scale training to production deployment for mixed reality applications.</p>
+          <p class="bio">I received my Ph.D. in Computer Science and Engineering from Seoul National University, where I was advised by <a href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>. During my doctoral studies, I completed two research internships at Meta in 2022 and 2023.</p>
+          <div class="profile-links" aria-label="Profile links">
+            <a href="mailto:gusdud1500@gmail.com">Email</a>
+            <a href="https://scholar.google.com/citations?user=PvpSNkQAAAAJ&amp;hl=en">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/hyunyoungjung/">LinkedIn</a>
+            <a href="https://drive.google.com/file/d/1MYc9EuSvopnszcYnqjWMVatY3oLOa06a/view?usp=sharing">CV</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="images/hyunyoung.jpg" width="1090" height="1252" alt="Hyunyoung Jung outdoors" fetchpriority="high">
+        </figure>
+      </section>
+      <section id="research" class="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <h2 id="research-title">Research</h2>
+        </div>
+        <div class="publication-list">
+          <article class="publication">
+            <div class="paper-media">
+              <video id="assetgen-preview" data-autoplay muted loop playsinline preload="none" poster="images/highlights/assetgen-gallery-poster.webp" width="960" height="540" aria-label="AssetGen published results: the paper's hero figure, sand-themed assets, and ice-themed assets">
+                <source src="images/highlights/assetgen-gallery-loop.mp4" type="video/mp4">
+                <a href="images/highlights/assetgen-gallery-loop.mp4">Watch the AssetGen results gallery</a>
+              </video>
+            </div>
+            <div class="publication-copy">
+              <p class="paper-meta">arXiv · 2026</p>
+            <h3><a href="https://arxiv.org/abs/2605.26137">AssetGen: Deployable 3D Asset Generation at Interactive Speed</a></h3>
+            <p class="authors"><a href="https://wdilin.github.io/">Dilin Wang</a>, <a href="https://xiaoyux1ang.github.io/">Xiaoyu Xiang</a>, <a href="https://sites.google.com/site/kihyuksml/">Kihyuk Sohn</a>, <a href="https://www.tmonnier.com/">Tom Monnier</a>, <a href="https://yuyingyeh.github.io/">Yu-Ying Yeh</a>, <a href="https://www.monkeyoverflow.com/">Thu Nguyen-Phuoc</a>, <a href="https://www.linkedin.com/in/jwzhang">Jiawen Zhang</a>, <a href="https://ychfan.github.io/">Yuchen Fan</a>, <a href="https://www.antoinetlc.com/">Antoine Toisoul</a>, <strong>Hyunyoung Jung</strong>, <a href="https://sites.google.com/site/prithvirajdhar274/">Prithviraj Dhar</a>, <a href="https://www.linkedin.com/in/michael-bunnell-5935561">Michael Bunnell</a>, <a href="https://nsarafianos.github.io/">Nikolaos Sarafianos</a>, <a href="https://zouchuhang.github.io/">Chuhang Zou</a>, <a href="https://shapovalov.ro/">Roman Shapovalov</a>, <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>, <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a></p>
+            <p class="paper-description">Image-to-3D generation of textured meshes in 30 seconds, with baked normals and a controlled polygon budget for real-time rendering.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2605.26137">Paper</a><a href="https://developers.meta.com/horizon/blog/worlds/AssetGen2/">Meta blog</a></div>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="paper-media">
+              <video id="worldgen-preview" data-autoplay muted loop playsinline preload="none" poster="images/highlights/worldgen-poster.webp" width="1280" height="720" aria-label="An explorable medieval environment generated by WorldGen">
+                <source src="images/highlights/worldgen-loop.mp4" type="video/mp4">
+                <a href="images/highlights/worldgen-loop.mp4">Watch the worldgen highlight</a>
+              </video>
+            </div>
+            <div class="publication-copy">
+              <p class="paper-meta">CVPR · 2026</p>
+            <h3><a href="https://arxiv.org/abs/2511.16825">WorldGen: From Text to Traversable and Interactive 3D Worlds</a></h3>
+            <p class="authors"><a href="https://wdilin.github.io/">Dilin Wang</a>, <strong>Hyunyoung Jung</strong>, <a href="https://www.tmonnier.com/">Tom Monnier</a>, <a href="https://sites.google.com/site/kihyuksml/">Kihyuk Sohn</a>, <a href="https://zouchuhang.github.io/">Chuhang Zou</a>, <a href="https://xiaoyux1ang.github.io/">Xiaoyu Xiang</a>, <a href="https://yuyingyeh.github.io/">Yu-Ying Yeh</a>, <a href="https://lsn33096.github.io/">Di Liu</a>, <a href="https://zixuanh.com/">Zixuan Huang</a>, <a href="https://www.monkeyoverflow.com/">Thu Nguyen-Phuoc</a>, <a href="https://ychfan.github.io/">Yuchen Fan</a>, <a href="https://sergiuoprea.com/">Sergiu Oprea</a>, <a href="https://ziyanw1.github.io/">Ziyan Wang</a>, <a href="https://shapovalov.ro/">Roman Shapovalov</a>, <a href="https://nsarafianos.github.io/">Nikolaos Sarafianos</a>, <a href="https://imagine.enpc.fr/~groueixt">Thibault Groueix</a>, <a href="https://www.antoinetlc.com/">Antoine Toisoul</a>, <a href="https://sites.google.com/site/prithvirajdhar274/">Prithviraj Dhar</a>, <a href="https://scholar.google.com/citations?user=R-VLSLQAAAAJ&amp;hl=zh-CN">Xiao Chu</a>, <a href="https://silent-chen.github.io/">Minghao Chen</a>, <a href="https://geonyeong-park.github.io/">Geon Yeong Park</a>, <a href="https://www.mahima-gupta.com/">Mahima Gupta</a>, <a href="https://www.linkedin.com/in/yassir-azziz-79038b107">Yassir Azziz</a>, <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a>, <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a></p>
+            <p class="paper-description">Text-to-3D generation of textured, traversable environments with interactive objects, designed for use in standard game engines.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2511.16825">Paper</a><a href="https://www.meta.com/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/">Meta blog</a></div>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="paper-media">
+              <video id="autopartgen-preview" data-autoplay muted loop playsinline preload="none" poster="images/highlights/autopartgen-poster.webp" width="960" height="540" aria-label="A generated 3D object alongside its individually generated parts">
+                <source src="images/highlights/autopartgen-loop.mp4" type="video/mp4">
+                <a href="images/highlights/autopartgen-loop.mp4">Watch the autopartgen highlight</a>
+              </video>
+            </div>
+            <div class="publication-copy">
+              <p class="paper-meta">NeurIPS · 2025</p>
+              <h3><a href="https://arxiv.org/abs/2507.13346">AutoPartGen: Autoregressive 3D Part Generation and Discovery</a></h3>
+              <p class="authors"><a href="https://silent-chen.github.io/">Minghao Chen</a>, <a href="https://jytime.github.io/">Jianyuan Wang</a>, <a href="https://shapovalov.ro/">Roman Shapovalov</a>, <a href="https://www.tmonnier.com/">Tom Monnier</a>, <strong>Hyunyoung Jung</strong>, <a href="https://wdilin.github.io/">Dilin Wang</a>, <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a>, <a href="https://scholar.google.de/citations?user=n9nXAPcAAAAJ&amp;hl=en">Iro Laina</a>, <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a></p>
+              <p class="paper-description">Autoregressive generation of part-based 3D objects from images, part masks, or existing 3D objects, with the type and number of parts inferred automatically.</p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2507.13346">Paper</a><a href="https://silent-chen.github.io/AutoPartGen/">Project</a></div>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="paper-media">
+              <video id="geosrf-preview" data-autoplay muted loop playsinline preload="none" poster="images/geosrf.jpg" width="786" height="720" aria-label="Geometry Transfer for Stylizing Radiance Fields demonstration">
+                <source src="images/geosrf.mp4" type="video/mp4">
+                <a href="images/geosrf.mp4">Watch the demonstration video</a>
+              </video>
+            </div>
+            <div class="publication-copy">
+              <p class="paper-meta">CVPR · 2024</p>
+              <h3><a href="geo-srf/">Geometry Transfer for Stylizing Radiance Fields</a></h3>
+              <p class="authors"><strong>Hyunyoung Jung</strong>, <a href="https://shnnam.github.io/">Seonghyeon Nam</a>, <a href="https://nsarafianos.github.io/">Nikolaos Sarafianos</a>, <a href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>, <a href="https://www.sornlex.com/">Alexander Sorkine-Hornung</a>, <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a></p>
+              <p class="paper-description">Joint stylization of 3D scene geometry and appearance, guided by a reference RGB image and depth map.</p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2402.00863">Paper</a><a href="geo-srf/">Project</a></div>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="paper-media comparison-media" tabindex="0" role="img" aria-label="AnyFlow input and optical flow comparison. Hover or focus to view the comparison.">
+              <img id="anyflow-preview" src="images/anyflow_before.png" width="472" height="472" alt="" loading="lazy">
+              <img class="comparison-after" src="images/anyflow_after.png" width="472" height="472" alt="" aria-hidden="true" loading="lazy">
+            </div>
+            <div class="publication-copy">
+              <p class="paper-meta">CVPR · 2023 <span class="distinction">Highlight</span></p>
+              <h3><a href="https://arxiv.org/abs/2303.16493">AnyFlow: Arbitrary Scale Optical Flow with Implicit Neural Representation</a></h3>
+              <p class="authors"><strong>Hyunyoung Jung</strong>, <a href="https://huizhuo1987.github.io/">Zhuo Hui</a>, <a href="https://www.linkedin.com/in/rayluolei/">Lei Luo</a>, <a href="https://www.linkedin.com/in/haitao-yang-28582324/">Haitao Yang</a>, <a href="https://pages.cs.wisc.edu/~fliu/">Feng Liu</a>, <a href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a>, <a href="https://www.linkedin.com/in/rakesh-r-3848538">Rakesh Ranjan</a>, <a href="https://www.linkedin.com/in/demandolx/">Denis Demandolx</a></p>
+              <p class="paper-description">Optical flow estimation at arbitrary output resolutions using an implicit neural representation, including from low-resolution inputs.</p>
+              <div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Jung_AnyFlow_Arbitrary_Scale_Optical_Flow_With_Implicit_Neural_Representation_CVPR_2023_paper.pdf">Paper</a><a href="https://arxiv.org/abs/2303.16493">arXiv</a></div>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="paper-media comparison-media" tabindex="0" role="img" aria-label="FSRE depth estimation comparison. Hover or focus to view the comparison.">
+              <img id="fsre-preview" src="images/fsre_before.png" width="472" height="472" alt="" loading="lazy">
+              <img class="comparison-after" src="images/fsre_after.png" width="472" height="472" alt="" aria-hidden="true" loading="lazy">
+            </div>
+            <div class="publication-copy">
+              <p class="paper-meta">ICCV · 2021 <span class="distinction">Oral</span></p>
+              <h3><a href="https://arxiv.org/abs/2108.08829">Fine-Grained Semantics-Aware Representation Enhancement for Self-Supervised Monocular Depth Estimation</a></h3>
+              <p class="authors"><strong>Hyunyoung Jung</strong>, <a href="https://sites.google.com/view/eh-p/members">Eunhyeok Park</a>, <a href="http://cmalab.snu.ac.kr/">Sungjoo Yoo</a></p>
+              <p class="paper-description">Semantics-guided depth estimation that improves object boundaries through metric learning and cross-attention.</p>
+              <div class="paper-links"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Jung_Fine-Grained_Semantics-Aware_Representation_Enhancement_for_Self-Supervised_Monocular_Depth_Estimation_ICCV_2021_paper.pdf">Paper</a><a href="https://arxiv.org/abs/2108.08829">arXiv</a><a href="https://github.com/hyBlue/FSRE-Depth">Code</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="experience" class="background-section" aria-labelledby="experience-title">
+        <div class="section-heading"><h2 id="experience-title">Experience &amp; education</h2></div>
+        <div class="background-grid">
+          <div>
+            <h3 class="institution">Meta Reality Labs</h3>
+            <div class="timeline-entry"><p class="entry-date">Nov 2024 — Present · Burlingame, CA</p><h4>Senior Software Engineer</h4><p>3D Generative AI Research</p></div>
+            <div class="timeline-entry"><p class="entry-date">Jan — Jun 2024 · Seoul, South Korea</p><h4>Research Collaborator</h4></div>
+            <div class="timeline-entry"><p class="entry-date">Jun — Dec 2023 · Sunnyvale, CA<br>Jun — Dec 2022 · Seattle, WA</p><h4>Research Scientist Intern</h4></div>
+          </div>
+          <div>
+            <h3 class="institution">Seoul National University</h3>
+            <div class="timeline-entry"><p class="entry-date">Sep 2019 — Aug 2024</p><h4>Ph.D. in Computer Science and Engineering</h4><p>Advisor: <a href="http://cmalab.snu.ac.kr/">Prof. Sungjoo Yoo</a></p></div>
+            <div class="timeline-entry"><p class="entry-date">Mar 2013 — Aug 2019</p><h4>B.S. in Computer Science and Engineering</h4></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
-
 </html>

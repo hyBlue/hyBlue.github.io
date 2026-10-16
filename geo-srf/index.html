@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Geometry Transfer for Stylizing Radiance Fields, CVPR 2024. Joint stylization of 3D scene geometry and appearance.">
 
   <title>Geometry Transfer for Stylizing Radiance Fields</title>
   <link href="https://fonts.googleapis.com/css?family=Noto Serif" rel="stylesheet">
@@ -14,7 +17,6 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
@@ -25,11 +27,7 @@
 
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+      <a class="navbar-item home-link" href="../">← Hyunyoung Jung</a>
     </div>
   </nav>
 
@@ -126,14 +124,14 @@
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">1-minute Intro</h2>
+          <h2 class="title is-3">Video overview</h2>
           <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/QpFQjE9sDg8" frameborder="0" allow="autoplay; encrypted-media"
+            <iframe src="https://www.youtube.com/embed/QpFQjE9sDg8" title="Geometry Transfer video overview" loading="lazy" frameborder="0" allow="autoplay; encrypted-media"
               allowfullscreen></iframe>
           </div>
 
           <!-- <div class="publication-video">
-            <video  controls autoplay playsinline >
+            <video  controls playsinline  preload="metadata">
               <source src="./assets/Teaser.mp4" type="video/mp4">
             </video>
           </div> -->
@@ -181,66 +179,66 @@
         <br><br>
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline height="100%"
-              style=" padding-bottom:5%">
+            <video poster="" id="research-video-2" controls muted loop playsinline height="100%"
+              style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/trex_158.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/teaser.png" style="width:10%; " /> -->
             <!-- <img src="./assets/style_image_139.jpg" style="width:10%; " /> -->
           </div>
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+            <video poster="" id="research-video-3" controls muted loop playsinline width="100%" style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/fern_138.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
             <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
           </div>
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+            <video poster="" id="research-video-4" controls muted loop playsinline width="100%" style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/horns_174.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
             <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
           </div>
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline height="100%"
-              style=" padding-bottom:5%">
+            <video poster="" id="research-video-5" controls muted loop playsinline height="100%"
+              style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/trex_147.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/teaser.png" style="width:10%; " /> -->
             <!-- <img src="./assets/style_image_139.jpg" style="width:10%; " /> -->
           </div>
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+            <video poster="" id="research-video-6" controls muted loop playsinline width="100%" style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/fern_166.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
             <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
           </div>
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+            <video poster="" id="research-video-7" controls muted loop playsinline width="100%" style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/fern_174.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
             <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
           </div>
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+            <video poster="" id="research-video-8" controls muted loop playsinline width="100%" style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/horns_144.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
             <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
           </div>
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+            <video poster="" id="research-video-9" controls muted loop playsinline width="100%" style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/fern_139.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
             <!-- <img src="./assets/flower_color.jpg" style="width:50%; " /> -->
           </div>
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline height="100%"
-              style=" padding-bottom:5%">
+            <video poster="" id="research-video-10" controls muted loop playsinline height="100%"
+              style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/trex_174.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/teaser.png" style="width:10%; " /> -->
@@ -248,7 +246,7 @@
           </div>
 
           <div class="item item-trex">
-            <video poster="" id="trex" autoplay controls muted loop playsinline width="100%" style=" padding-bottom:5%">
+            <video poster="" id="research-video-11" controls muted loop playsinline width="100%" style=" padding-bottom:5%" preload="metadata">
               <source src="./assets/horns_154.mp4" type="video/mp4">
             </video>
             <!-- <img src="./assets/flower_origin.png" style="width:50%; " /> -->
@@ -295,7 +293,7 @@
                   <div class="columns is-vcentered" style="margin-top: 2%;">
                     <div class="has-text-centered" style="width: 50%;">
                       <div height="33%">
-                        <video poster="" id="truck-adain" autoplay controls muted loop playsinline>
+                        <video poster="" id="research-video-12" controls muted loop playsinline preload="metadata">
                           <source src="./assets/Partial_3D_instances_153_comp.mp4" type="video/mp4">
                         </video>
                       </div>
@@ -303,7 +301,7 @@
 
                     <div class="has-text-centered" style="width: 50%; margin-left: 3%;">
                       <div height="33%">
-                        <video poster="" id="truck-adain" autoplay controls muted loop playsinline>
+                        <video poster="" id="research-video-13" controls muted loop playsinline preload="metadata">
                           <source src="./assets/Partial_3D_instances_comp.mp4" type="video/mp4">
                         </video>
                       </div>
@@ -334,14 +332,14 @@
 
                     <div class="column has-text-centered" style="width: 50%;">
                       <div height="50%">
-                        <video poster="" id="playground-single" autoplay controls muted loop playsinline>
+                        <video poster="" id="research-video-14" controls muted loop playsinline preload="metadata">
                           <source src="./assets/trex_interp_comp.mp4" type="video/mp4">
                         </video>
                       </div>
                       <!-- <p>Scene with a single reference</p> -->
 
                       <div height="50%">
-                        <video poster="" id="playground-single" autoplay controls muted loop playsinline>
+                        <video poster="" id="research-video-15" controls muted loop playsinline preload="metadata">
                           <source src="./assets/fern_interp_comp.mp4" type="video/mp4">
                         </video>
                       </div>
@@ -367,21 +365,21 @@
             </p>
             <div class="columns is-vcentered has-text-centered">
               <div style="width: 20%;">
-                <img src="./assets/fern.png" height="20%" />
+                <img src="./assets/fern.png" alt="Original fern scene" height="20%" />
                 <p>Content</p>
-                <img src="./assets/style_image_139.png" height="20%" />
+                <img src="./assets/style_image_139.png" alt="Reference style image" height="20%" />
                 <p>Style</p>
               </div>
               <div style="width: 80%; margin-left: 5%;">
                 <div height="50%" class="row columns">
                   <div width="50%" class="column">
-                    <video poster="" id="mic-abc-texler" autoplay controls muted loop playsinline>
+                    <video poster="" id="research-video-16" controls muted loop playsinline preload="metadata">
                       <source src="./assets/snerf.mp4" type="video/mp4">
                     </video>
                     <p><a href="https://arxiv.org/abs/2207.02363/">SNeRF</a></p>
                   </div>
                   <div width="50%" class="column">
-                    <video poster="" id="mic-abc-arf" autoplay controls muted loop playsinline>
+                    <video poster="" id="research-video-17" controls muted loop playsinline preload="metadata">
                       <source src="./assets/arf_comp.mp4" type="video/mp4">
                     </video>
                     <p><a href="https://www.cs.cornell.edu/projects/arf/">ARF</a></p>
@@ -389,13 +387,13 @@
                 </div>
                 <div height="50%" class="row columns">
                   <div width="50%" class="column">
-                    <video poster="" id="mic-abc-snerf" autoplay controls muted loop playsinline>
+                    <video poster="" id="research-video-18" controls muted loop playsinline preload="metadata">
                       <source src="./assets/ref.mp4" type="video/mp4">
                     </video>
                     <p><a href="https://ref-npr.github.io/">Ref-NPR</a></p>
                   </div>
                   <div width="50%" class="column">
-                    <video poster="" id="mic-abc-refnpr" autoplay controls muted loop playsinline>
+                    <video poster="" id="research-video-19" controls muted loop playsinline preload="metadata">
                       <source src="./assets/ours_comp.mp4" type="video/mp4">
                     </video>
                     <p><b>Ours</b></p>
